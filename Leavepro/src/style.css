@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  background: #f5f6fa;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 230px;
+  background: #172033;
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.sidebar h3 {
+  margin-bottom: 30px;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 12px 5px;
+  margin-bottom: 5px;
+}
+
+.sidebar a:hover {
+  background: #29364f;
+  border-radius: 5px;
+}
+
+.sidebar button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #dc3545;
+  color: white;
+}
+
+.content {
+  flex: 1;
+  padding: 25px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.card-box {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #ddd;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f5f6fa;
+}
+
+.login-box {
+  background: white;
+  padding: 35px;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 2px 15px #ddd;
+}
+
+.login-box h2 {
+  text-align: center;
+}
+
+.demo-login {
+  margin-top: 20px;
+  font-size: 13px;
+  color: #666;
+}
+
+.filter-box {
+  max-width: 250px;
+}
+
+@media (max-width: 768px) {
+  .app {
+    display: block;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .sidebar a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .content {
+    padding: 15px;
+    overflow-x: auto;
+  }
+
+  .login-box {
+    width: 90%;
+  }
+
+  table {
+    min-width: 650px;
+  }
+}
